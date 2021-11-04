@@ -1,0 +1,524 @@
+/*Fisier formular.scss->foaie de stil separata pentru stilizarea formularului de pe pagina de contact, ce se va declansa print intermediul scriptului inserat in fisierul contact.js, din fisierul scripts aferent proiectului*/
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 1em;
+}
+
+.form-container .formular {
+  border-radius: 30px;
+  overflow-y: scroll;
+  width: 65%;
+  height: 700px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1em;
+}
+
+.form-container .formular h2 {
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3em;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.form-container .formular h2:hover {
+  color: #f7770f;
+  text-decoration: underline;
+}
+
+.form-container .formular label {
+  cursor: pointer;
+}
+
+.form-container .formular input::-moz-selection {
+  background-color: #f7770f;
+}
+
+.form-container .formular input::selection {
+  background-color: #f7770f;
+}
+
+.form-container .formular .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.form-container .formular .last label {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+}
+
+.form-container .formular .last input {
+  margin-bottom: 1.5em;
+  border: 3px solid transparent;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  color: white;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.form-container .formular .last input:focus {
+  color: white;
+  border-bottom: 3px solid #f7770f;
+}
+
+.form-container .formular .last input::-webkit-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .last input:-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .last input::-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .last input::placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .e_mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.form-container .formular .e_mail label {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+}
+
+.form-container .formular .e_mail input {
+  margin-bottom: 1.5em;
+  border: 3px solid transparent;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  color: white;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.form-container .formular .e_mail input:focus {
+  color: white;
+  border-bottom: 3px solid #f7770f;
+}
+
+.form-container .formular .e_mail input::-webkit-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .e_mail input:-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .e_mail input::-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .e_mail input::placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .varsta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.form-container .formular .varsta label {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+}
+
+.form-container .formular .varsta input {
+  margin-bottom: 1.5em;
+  border: 3px solid transparent;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  color: white;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.form-container .formular .varsta input:focus {
+  color: white;
+  border-bottom: 3px solid #f7770f;
+}
+
+.form-container .formular .varsta input::-webkit-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .varsta input:-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .varsta input::-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .varsta input::placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.form-container .formular .dropdown label {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+}
+
+.form-container .formular .dropdown select {
+  margin-bottom: 0.7em;
+  border: 3px solid transparent;
+  font-size: 1em;
+  outline: none;
+  background: transparent;
+  color: white;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.form-container .formular .dropdown select:focus {
+  color: white;
+  border-bottom: 3px solid #f7770f;
+}
+
+.form-container .formular .dropdown option {
+  color: #002230;
+  font-weight: bolder;
+}
+
+.form-container .formular .dropdown option:hover {
+  background-color: #f7770f;
+}
+
+.form-container .formular .dropdown select::-webkit-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .dropdown select:-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .dropdown select::-ms-input-placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .dropdown select::placeholder {
+  color: #ddd;
+  font-weight: bolder;
+}
+
+.form-container .formular .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.form-container .formular .radio label {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.form-container .formular .radio label:hover {
+  color: #002230;
+}
+
+.form-container .formular .radio p {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+  cursor: pointer;
+}
+
+.form-container .formular .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.form-container .formular .checkbox label {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.form-container .formular .checkbox label:hover {
+  color: #002230;
+}
+
+.form-container .formular .checkbox p {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+  cursor: pointer;
+}
+
+.form-container .formular .textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-top: 1.3em;
+  padding-right: 2em;
+}
+
+.form-container .formular .textarea label {
+  margin-bottom: 0.75em;
+  font-weight: bolder;
+  font-size: 1.2em;
+  color: #002230;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 0.2em;
+  cursor: pointer;
+}
+
+.form-container .formular .textarea label:hover {
+  color: #002230;
+}
+
+.form-container .formular .textarea textarea {
+  border: 3px transparent;
+  height: 200px;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 15px;
+}
+
+.form-container .formular .textarea textarea:focus {
+  outline: none;
+}
+
+.form-container .formular .textarea textarea::-moz-selection {
+  background-color: #f7770f;
+}
+
+.form-container .formular .textarea textarea::selection {
+  background-color: #f7770f;
+}
+
+.form-container .formular .textarea textarea::-webkit-input-placeholder {
+  color: white;
+  font-weight: bolder;
+}
+
+.form-container .formular .textarea textarea:-ms-input-placeholder {
+  color: white;
+  font-weight: bolder;
+}
+
+.form-container .formular .textarea textarea::-ms-input-placeholder {
+  color: white;
+  font-weight: bolder;
+}
+
+.form-container .formular .textarea textarea::placeholder {
+  color: white;
+  font-weight: bolder;
+}
+
+.form-container .formular .flex-buttons {
+  padding-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.form-container .formular .flex-buttons #send1 {
+  border: none;
+  padding: 1em;
+  width: 30%;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  background-color: #286b7c;
+  font-size: 1em;
+  color: white;
+  font-weight: bolder;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container .formular .flex-buttons #send1:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  background-color: indianred;
+}
+
+.form-container .formular .flex-buttons #reset1 {
+  border: none;
+  padding: 1em;
+  width: 25%;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  background-color: #002230;
+  font-size: 1em;
+  color: white;
+  font-weight: bolder;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container .formular .flex-buttons #reset1:hover {
+  background-color: #0066ff;
+}
+
+.form-container .formular .flex-buttons #close1 {
+  border: none;
+  padding: 1em;
+  width: 30%;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  background-color: #f7770f;
+  font-size: 1em;
+  color: white;
+  font-weight: bolder;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-container .formular #close1:hover {
+  background-color: orangered;
+}
+
+.form-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}

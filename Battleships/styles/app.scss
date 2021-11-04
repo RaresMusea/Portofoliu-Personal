@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+#background {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.content {
+  .logo {
+    font-family: "Michroma", sans-serif;
+    color: white;
+    position: fixed;
+    font-size: 8em;
+    font-weight: bolder;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    a {
+      font-size: 8rem;
+      text-decoration: none;
+      transition: 2s ease-in-out;
+      color: white;
+    }
+  }
+  a:hover {
+    color: #ff6200;
+  }
+  a::selection {
+    color: none;
+  }
+  .desc {
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    position: fixed;
+    font-size: 2rem;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0;
+    margin-top: 0;
+    color: white;
+  }
+
+  .desc::selection {
+    color: none;
+  }
+}
+
+.btn1 {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 50%);
+  padding: 0.5em;
+  height: auto;
+  width: 25%;
+  background-color: #ff6200;
+  border: none;
+  border-radius: 18px;
+  transition: transform 0.4s;
+
+  a {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Michroma", Arial;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn1:hover {
+  transform: scale(1.1);
+  background-color: #e64c00;
+}
+
+.btn2 {
+  position: fixed;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, 50%);
+  width: 25%;
+  padding: 0.5em;
+  height: auto;
+  background-color: #ff6200;
+  border: none;
+  border-radius: 18px;
+  transition: transform 0.4s;
+
+  a {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Michroma", Arial;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn2:hover {
+  transform: scale(1.1);
+  background-color: #e64c00;
+}
+
+.btn3 {
+  position: fixed;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, 50%);
+  width: 25%;
+  padding: 0.5em;
+  height: auto;
+  background-color: #ff6200;
+  border: none;
+  border-radius: 18px;
+  transition: transform 0.4s;
+
+  a {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Michroma", Arial;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn3:hover {
+  transform: scale(1.1);
+  background-color: #e64c00;
+}
+
+.btn4 {
+  position: fixed;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, 50%);
+  width: 25%;
+  padding: 0.5em;
+  height: auto;
+  background-color: #ff6200;
+  border: none;
+  border-radius: 18px;
+  transition: transform 0.4s;
+
+  a {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Michroma", Arial;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.btn4:hover {
+  transform: scale(1.1);
+  background-color: #e64c00;
+}
+
+.title-popup {
+  font-family: "Michroma", Arial;
+  font-weight: bolder;
+}
+
+.text {
+  text-indent: 0.5em;
+  font-size: 1em;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5em;
+}
+
+.sub {
+  font-weight: bold;
+  font-family: "Michroma", Arial;
+}
+
+.lista {
+  li {
+    font-size: 1em;
+    font-family: "Kanit", sans-serif;
+    line-height: 1em;
+  }
+}
+
+.grace {
+  font-size: 1.5em;
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5em;
+}
+
+.close {
+  background-color: #ff6200 !important;
+  color: white;
+  font-family: "Michroma", Arial;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  transition: 1s ease-out;
+}
+
+.close:hover {
+  background-color: #e64c00;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    .logo {
+      a {
+        font-size: 4rem;
+      }
+    }
+
+    .desc {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 700px) {
+  .menu {
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4 {
+      a {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .content {
+    .logo {
+      a {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap");
+html {
+  min-height: 100%;
+  background: url("https://images.unsplash.com/photo-1557683304-673a23048d34?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=486&q=80");
+  background-size: cover;
+  background-blend-mode: multiply;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+}
+
+*:selection {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.content {
+  padding-top: 3.5em;
+}
+
+.content #title {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bolder;
+  color: #d9d9d9;
+  font-size: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-align: center;
+}
+
+.content #description {
+  font-family: "Bai Jamjuree", sans-serif;
+  color: white;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+
+.content .form-start {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.content .form-start .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.content .form-start .items label {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 0.15em;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-top: 1.2em;
+}
+
+.content .form-start .items input {
+  width: 100%;
+  height: 1.6em;
+  text-indent: 0.2em;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border: 2px solid white;
+}
+
+.content .form-start .items input:focus {
+  outline: none;
+  border: 2px solid #321168;
+}
+
+.content .form-start .items label:hover {
+  color: #321168;
+}
+
+.content .form-start .items2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+  padding-left: 1.4em;
+}
+
+.content .form-start .items2 label {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 0.15em;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-top: 1.2em;
+}
+
+.content .form-start .items2 label:hover {
+  color: #321168;
+}
+
+.content .form-start .items2 select {
+  width: 100%;
+  height: 1.6em;
+  text-indent: 0.2em;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border: 2px solid white;
+}
+
+.content .form-start .items2 select:focus {
+  outline: none;
+  border: 2px solid #321168;
+}
+
+.content .form-start .items2 option:hover {
+  background-color: #321168;
+}
+
+.content .form-start .items3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.content .form-start .items3 p {
+  font-size: 1.2em;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+  padding-left: 0.2em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.content .form-start .items3 p:hover {
+  color: #321168;
+}
+
+.content .form-start .items3 div {
+  font-size: 1.2em;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+}
+
+.content .form-start .items3 div input {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.content .form-start .items3 div label {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.content .form-start .items3 div label:hover {
+  color: #321168;
+}
+
+.content .form-start .items4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.content .form-start .items4 p {
+  font-size: 1.2em;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+  padding-left: 0.2em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.content .form-start .items4 p:hover {
+  color: #321168;
+}
+
+.content .form-start .items4 div {
+  font-size: 1.2em;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+}
+
+.content .form-start .items4 div input {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.content .form-start .items4 div label {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.content .form-start .items4 div label:hover {
+  color: #321168;
+}
+
+.content .form-start .items5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.content .form-start .items5 label {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 0.15em;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-top: 1.2em;
+}
+
+.content .form-start .items5 label:hover {
+  color: #321168;
+}
+
+.content .form-start .items5 textarea {
+  width: 100%;
+  height: 1.6em;
+  text-indent: 0.2em;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1em;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border: 2px solid white;
+  resize: none;
+  height: 8em;
+}
+
+.content .form-start .items5 textarea:focus {
+  outline: none;
+  border: 2px solid #321168;
+}
+
+.content .form-start .form-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2em;
+  padding-bottom: 1em;
+}
+
+.content .form-start .form-end #submit {
+  width: 60%;
+  height: 3.5em;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  background-color: #321168;
+  color: white;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.content .form-start .form-end #submit:hover {
+  background-color: green;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 720px) {
+  .content #title {
+    font-size: 3.5em;
+  }
+  .content #description {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .content .form-start {
+    width: 80%;
+    border-radius: 15px;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+  }
+  .content .form-start #survey-form {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  .content .form-start:hover {
+    -webkit-box-shadow: 2px 1px #70517a;
+            box-shadow: 2px 1px #70517a;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .content .form-start {
+    width: 60%;
+  }
+  .content .form-start #survey-form {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

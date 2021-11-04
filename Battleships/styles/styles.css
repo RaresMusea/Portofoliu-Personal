@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+body {
+  font-family: "Michroma", sans-serif;
+}
+
+/*Container ce contine cele doua table de joc*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .battleship-grid {
+  margin: 2vmin;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (4.6vmin)[10];
+      grid-template-rows: repeat(10, 4.6vmin);
+  -ms-grid-columns: (4.6vmin)[10];
+      grid-template-columns: repeat(10, 4.6vmin);
+  background-color: #3ac9ba;
+}
+
+/*Stilizarea fiecarui patratel din cele doua grid-uri,cel al computer-ului si cel al jucatorului*/
+.battleship-grid div {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/*Stilizarea zonei ce va contine navele jucatorului*/
+.grid-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5em;
+}
+
+#turns,
+#infos,
+#win-text {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.info-hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  margin: 1em;
+  margin-top: 0;
+  width: 10%;
+  height: auto;
+  padding: 1em;
+  border-radius: 2.3vmin;
+  border: none;
+  font-family: "Michroma", sans-serif;
+  font-size: 1em;
+  color: white;
+  background-color: #ff6200;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e64c00;
+  color: #3ac9ba;
+  -webkit-box-shadow: 2px 2px solid gray;
+          box-shadow: 2px 2px solid gray;
+}
+
+.ships > div {
+  width: 4.6vmin;
+  height: 4.6vmin;
+}
+
+.ships {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1vmin;
+  width: calc(4.6vmin * var(--width, 1));
+  height: calc(4.6vmin * var(--height, 1));
+  border-radius: 2.3vmin;
+  background-color: gray;
+}
+
+.fleet {
+  text-align: center;
+}
+
+/*Stilizarea destroyer-ului (nava de 2 casute de pe grid)*/
+.destroyer-container {
+  --width: 2;
+}
+
+.destroyer-container-vertical {
+  --height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*Stilizarea individuala a fiecarui patrat ce intra in compozitia unei nave de lupta*/
+/*Stilizarea submarinului (nava de 3 casute de pe grid)*/
+.sub-container {
+  --width: 3;
+}
+
+.sub-container-vertical {
+  --height: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*Stilizarea cruiser-ului (a doua nava de 3 casute de pe grid)*/
+.crs-container {
+  --width: 3;
+}
+
+.crs-container-vertical {
+  --height: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*Stilizarea battleship-ului (nava de 4 casute de pe grid)*/
+.btl-container {
+  --width: 4;
+}
+
+.btl-container-vertical {
+  --height: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*Stilizarea aircraft carrier-ului (nava de 5 casute de pe grid)*/
+.carr-container {
+  --width: 5;
+}
+
+.carr-container-vertical {
+  --height: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*Silizarea navelor care vor fi adaugate automat in grid-ul computer-ului,sau cel al jucatorului,daca acesta doreste ca navele sale sa fie aleator plasate pe grid*/
+.destroyer,
+.submarine,
+.cruiser,
+.battleship,
+.carrier {
+  background-color: gray;
+}
+
+/*Coloram diferit puntea vapoarelor,pentru o mai buna identificare*/
+.ships .deck {
+  background-color: lightgray !important;
+  width: calc(4.6vmin * --width);
+  height: calc(4.6vmin * --height);
+  border-radius: 2.3vmin;
+}
+
+.crs,
+.btl,
+.carr,
+.sub {
+  background-color: grey;
+}
+
+.explode::after,
+.missed::after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  width: 2vmin;
+  height: 2vmin;
+}
+
+.missed::after {
+  background-color: #6a889e;
+}
+
+.explode::after {
+  background-color: #e35959;
+}
+
+.missed,
+.explode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.missed::before {
+  content: "";
+  position: absolute;
+  -webkit-animation: hit 0.4s ease-out forwards;
+          animation: hit 0.4s ease-out forwards;
+  border: 0.1vmin solid #6a889e;
+  border-style: solid;
+  border-radius: 100%;
+  width: 2vmin;
+  height: 2vmin;
+}
+
+.explode {
+  content: "";
+  border-color: #e35959;
+  -webkit-animation: boom 0.4s ease-out forwards;
+          animation: boom 0.4s ease-out forwards;
+}
+
+@-webkit-keyframes boom {
+  0% {
+    background-color: #e35959;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+@keyframes boom {
+  0% {
+    background-color: #e35959;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+
+@-webkit-keyframes hit {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+}
+
+@keyframes hit {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+}
+
+.stripe {
+  background-image: linear-gradient(45deg, #3ac9ba 25%, #ffffff 25%, #ffffff 50%, #3ac9ba 50%, #3ac9ba 75%, #ffffff 75%, #ffffff 100%);
+  background-size: 4.6vmin 4.6vmin;
+  -webkit-transition: 2s ease-in;
+  transition: 2s ease-in;
+}
+
+.warship.start.vertical,
+.warship.start.vertical::before {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.warship.end.vertical,
+.warship.end.vertical::before {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.warship.start.horizontal,
+.warship.start.horizontal::before {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.warship.end.horizontal,
+.warship.end.horizontal::before {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.warship.deck.start.vertical,
+.warship.deck.start.vertical::before {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.warship.deck.end.vertical,
+.warship.deck.end.vertical::before {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.warship.deck {
+  background-color: lightgray !important;
+}
+
+.ai-grid > .warship {
+  background-color: #3ac9ba;
+  border-radius: 0 !important;
+}
+
+.ai-grid .deck {
+  background-color: #3ac9ba !important;
+  border-radius: 0 !important;
+}
+
+.ai-grid .warship.explode.vertical.start {
+  border-style: solid !important;
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+}
+
+.ai-grid .warship.explode.vertical.end {
+  border-style: solid !important;
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.ai-grid .warship.explode.horizontal.start {
+  border-style: solid !important;
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.ai-grid .warship.explode.horizontal.end {
+  border-style: solid !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.ai-grid .deck.explode {
+  background-color: lightgray !important;
+}
+
+.warship {
+  position: relative;
+}
+
+.ai-grid .warship.vertical::before,
+.ai-grid .warship.horizontal::before {
+  border: none;
+}
+
+.warship.vertical::before,
+.warship.horizontal::before {
+  content: "";
+  position: absolute;
+  border: 0.3vmin solid white;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+}
+
+.warship.horizontal::before {
+  -webkit-animation: floatingX 3s linear infinite forwards;
+          animation: floatingX 3s linear infinite forwards;
+  border-left: none;
+  border-right: none;
+}
+
+.warship.vertical::before {
+  -webkit-animation: floatingY 3s linear infinite forwards;
+          animation: floatingY 3s linear infinite forwards;
+  border-top: none;
+  border-bottom: none;
+}
+
+@-webkit-keyframes floatingX {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+  }
+}
+
+@keyframes floatingX {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+  }
+}
+
+@-webkit-keyframes floatingY {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+  }
+}
+
+@keyframes floatingY {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+  }
+}
+
+.final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

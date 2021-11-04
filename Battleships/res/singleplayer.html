@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="icon" type="imgage/png" href="../favicon/favicon-32x32.png">
+  <!--Adaugarea functionalitatii jocului prin inserarea fisierului ce contine codul Javascript-->
+  <script src="../scripts/functionality.js"></script>
+  <title>Battleships-VS AI Mode</title>
+</head>
+<body>
+    <!--Spatiul ce reprezinta grila utilizatorului, respectiv cea a calculatorului -->
+    <div class="container">
+      <div class=" battleship-grid user-grid"></div>
+      <div class=" battleship-grid ai-grid"></div>
+    </div>
+
+    <!--Zona ce va contine navele playerului,zona de unde acestea pot fi deplasate pe grid-->
+    <h3 class="fleet">Your fleet</h3>
+    <div class="container">
+    <div class="grid-area">
+
+      <!--Adaugarea navelor-->
+      <!--Adaugarea destroyer-ului(nava de 2 casute)-->
+      <div class="destroyer-container ships" draggable="true"><div id="destroyer0"></div><div id="destroyer1" class="deck"></div></div>
+
+      <!--Adaugarea submarinului (nava de 3 casute)-->
+      <div class="sub-container ships" draggable="true"> <div id="sub0"></div><div id="sub1"></div><div id="sub2" class="deck"></div></div>
+
+      <!--Adaugarea cruiser-ului (a doua nava de 3 casute)-->
+      <div class="crs-container ships" draggable="true"><div id="crs0"></div><div id="crs1"></div><div id="crs2" class="deck"></div></div>
+
+      <!--Adaugarea battleship-ului (nava de 4 casute )-->
+      <div class="btl-container ships" draggable="true"><div id="btl0"></div><div id="btl1"></div><div id="btl2"></div><div id="btl3" class="deck"></div></div>
+
+      <!--Adaugarea  aircraft carrier-ului (nava de 5 casute->cea mai mare nava dintre toate cele ce vor exista in joc)-->
+      <div class="carr-container ships" draggable="true"><div id="carr0"></div><div id="carr1"></div><div id="carr2"></div><div id="carr3"></div><div id="carr4" class="deck"></div></div>
+    </div>
+  </div>
+
+   <!--Container ce va contine informatii aditionale ce vor fi afisate pe intreg parcursul jocului,dar care pentru inceput nu vor fi vizibile-->
+   <div class="container info-hide">
+    <button id="start" class="btn">Start Battle</button>
+    <button id="rot" class="btn">Rotate Ships</button>
+    <button id="swap" class="btn">Swap Ship Decks</button>
+    <button id="auto" class="btn">Auto Align Ships</button>
+   
+  </div>
+
+  <h3 id="turns">Your Turn</h3>
+  <h3 id="infos"></h3>
+  <h3 id="win-text"></h3>
+  <div class="final">
+  <button id ="restart" onclick="window.location.reload()" class="btn">New Game</button>
+</div>
+</body>
+</html>

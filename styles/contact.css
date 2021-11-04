@@ -1,0 +1,402 @@
+/*Fisier contact.scss->Fisier ce defineste aspectul si design-ul aferent paginii de contact de pe websiste*/
+.sect1 {
+  background-image: url("../src/background-contact-section1.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background-blend-mode: overlay;
+}
+
+.sect1 .connect {
+  margin-top: 1em;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 3%;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 2s;
+  transition: 2s;
+  padding: 0.2em;
+  z-index: 1;
+}
+
+.sect1 .connect .collapse i {
+  margin: 1em;
+}
+
+.sect1 .connect .unseen {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.sect1 .connect .unseen i {
+  display: none;
+}
+
+.sect1 .connect .seen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: 2s;
+  transition: 2s;
+  height: 10px;
+}
+
+.sect1 .connect .seen i {
+  display: block;
+  padding-top: 0.2em;
+}
+
+.sect1 .connect i {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.sect1 .connect i:hover {
+  color: #f7770f;
+}
+
+.sect1 .connect i:active {
+  color: #0066ff;
+}
+
+.sect1 .connect a {
+  text-decoration: none;
+  color: black;
+}
+
+.sect1 .visible {
+  display: block;
+  font-size: 4em;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 2em;
+  float: left;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: 3s;
+  transition: 3s;
+  cursor: pointer;
+}
+
+.sect1 img {
+  -webkit-transform: translateY(-55px);
+  transform: translateY(-55px);
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  padding: 3em;
+}
+
+.sect1 .invisible {
+  display: none;
+}
+
+.sect2 {
+  background-image: url("../src/background-contact-section2.svg");
+  background-blend-mode: overlay;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.sect2 .flex-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.sect2 .flex-boxes .it1 {
+  width: 30%;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 0;
+  height: 400px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.sect2 .flex-boxes .it1 h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 0.75em;
+  cursor: pointer;
+}
+
+.sect2 .flex-boxes .it1 img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin-bottom: 1em;
+}
+
+.sect2 .flex-boxes .it1 img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sect2 .flex-boxes .it1 button {
+  margin: 0 auto;
+  display: block;
+  padding: 0.7em;
+  font-family: "Hind Siliguri", sans-serif;
+  width: 40%;
+  border-radius: 15px;
+  border: none;
+  font-weight: bolder;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: #286b7c;
+  color: white;
+}
+
+.sect2 .flex-boxes .it1 button:focus {
+  outline: none;
+}
+
+.sect2 .flex-boxes .it1 button:hover {
+  width: 60%;
+  background-color: #f7770f;
+}
+
+.sect2 .flex-boxes .it1 .enabled p {
+  padding: 1em;
+  line-height: 1.4em;
+  text-indent: 0.5em;
+  font-size: 1.2em;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.sect2 .flex-boxes .it1 .disabled {
+  display: none;
+}
+
+.sect2 .flex-boxes .it2 {
+  width: 30%;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 0;
+  height: 400px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.sect2 .flex-boxes .it2 h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  padding: 0.75em;
+  cursor: pointer;
+}
+
+.sect2 .flex-boxes .it2 img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid gray;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin-bottom: 1em;
+}
+
+.sect2 .flex-boxes .it2 img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.sect2 .flex-boxes .it2 button {
+  margin: 0 auto;
+  display: block;
+  padding: 0.7em;
+  font-family: "Hind Siliguri", sans-serif;
+  width: 40%;
+  border-radius: 15px;
+  border: none;
+  font-weight: bolder;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: #286b7c;
+  color: white;
+}
+
+.sect2 .flex-boxes .it2 button:focus {
+  outline: none;
+}
+
+.sect2 .flex-boxes .it2 button:hover {
+  width: 60%;
+  background-color: #f7770f;
+}
+
+.sect2 .flex-boxes .it2 .deactivated {
+  display: none;
+}
+
+.sect2 .flex-boxes .it2 .activated p {
+  padding: 1em;
+  line-height: 1.4em;
+  text-indent: 0.5em;
+  font-size: 1.2em;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.sect2 .flex-boxes .it2 .activated h3 {
+  padding: 1.5em;
+  font-size: 1.6em;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons i {
+  padding: 0.2em;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons .fb {
+  color: #4267b2;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons .in {
+  color: #0e76a8;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons .mail {
+  color: red;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons .insta {
+  color: #c13584;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons .gh {
+  color: #333;
+}
+
+.sect2 .flex-boxes .it2 .activated .icons .wh {
+  color: #25d366;
+}
+
+.sect2 .flex-boxes .it2 .activated .flex-ic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.sect2 .flex-boxes .it2 .activated .flex-ic i {
+  color: white;
+}
+
+.sect2 .undetected {
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  padding: 2em;
+  margin-top: 5em;
+  font-size: 1.5em;
+  border: none;
+  background-color: #f7770f;
+  color: white;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sect2 .undetected:hover {
+  background-color: #25d366;
+}
+
+.sect3 {
+  background-image: url("../src/background-contact-section3.svg");
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}

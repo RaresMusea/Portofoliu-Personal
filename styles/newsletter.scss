@@ -1,0 +1,119 @@
+/*Fisier newsletter.css->Fisier ce stilizeaza aspectul modalului ce sa declansa in situatia in care utilizatorul apasa pe butonul din subsolul paginii cu textul Aboneaza-te la Newsletter, de pe oricare din paginile web aferente acestui website de portofoliu*/
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s opacity ease;
+  .modal {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0em;
+    margin: 0;
+
+    h2 {
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      font-size: 2em;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.2em;
+      padding-bottom: 1em;
+
+      label {
+        text-align: left;
+        padding-bottom: 1em;
+        font-family: "Hind Siliguri", sans-serif;
+        font-size: 1.2em;
+        font-weight: bolder;
+      }
+
+      input {
+        width: 100%;
+        outline: none;
+        border: 2px solid transparent;
+        transition: 0.25s;
+        border-style: none;
+        padding: 0.5em;
+        border-radius: 5px;
+      }
+      input:focus {
+        transition: 0.25s;
+        outline: none;
+        border: 2px solid #f7770f;
+      }
+
+      .buttons-list {
+        padding-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input,
+        button {
+          margin-bottom: 1.5em;
+          padding: 0.5em;
+          width: 50%;
+          font-family: "Hind Siliguri", sans-serif;
+          border-radius: 1em;
+          box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+          font-weight: bolder;
+          outline: none;
+          border: none;
+          transition: 0.45s;
+        }
+
+        button:hover,
+        input:hover {
+          transform: scale(1.1);
+        }
+
+        .submit {
+          background-color: #f7770f;
+          color: white;
+        }
+
+        .reset {
+          background-color: #0066ff;
+          color: white;
+        }
+
+        .close {
+          background-color: #002230;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}

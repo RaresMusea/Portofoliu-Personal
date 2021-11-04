@@ -1,0 +1,548 @@
+@charset "UTF-8";
+/*Fisier about.css->Descrie aspectul si design-ul paginii ce surprinde calatoria mea in lumea programarii*/
+.section1 {
+  background-image: url("../src/wave-haikei.svg");
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+  overflow: hidden;
+}
+
+.section1 .connect {
+  margin-top: 1em;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 3%;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 2s;
+  transition: 2s;
+  padding: 0.2em;
+  z-index: 1;
+}
+
+.section1 .connect .collapse i {
+  margin: 1em;
+}
+
+.section1 .connect .unseen {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.section1 .connect .unseen i {
+  display: none;
+}
+
+.section1 .connect .seen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: 2s;
+  transition: 2s;
+  height: 10px;
+}
+
+.section1 .connect .seen i {
+  display: block;
+  padding-top: 0.2em;
+}
+
+.section1 .connect i {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.section1 .connect i:hover {
+  color: #f7770f;
+}
+
+.section1 .connect i:active {
+  color: #0066ff;
+}
+
+.section1 .connect a {
+  text-decoration: none;
+  color: black;
+}
+
+.section1 img {
+  margin: 0 auto;
+  display: block;
+  padding: 2em;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.section1 .none {
+  display: none;
+}
+
+.section1 .block {
+  display: block;
+  color: white;
+  font-size: 2.5em;
+  float: right;
+  text-align: center;
+  right: 5%;
+  position: relative;
+  bottom: 40%;
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section2 {
+  background-image: url("../src/background-about-section2.svg");
+  width: 100;
+  height: 1700px;
+  overflow: hidden;
+}
+
+.section2 h2 {
+  padding-top: 0em;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2em;
+  margin-top: 0;
+  color: #f7770f;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.section2 h2:hover {
+  color: #ffffff;
+}
+
+.section2 .gif1 {
+  display: block;
+  padding-left: 2em;
+  float: left;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+
+.section2 .headline {
+  padding-top: 1.5em;
+  line-height: 1.4em;
+  font-size: 1.1em;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+  padding-left: 2em;
+  text-indent: 1.2em;
+  padding-right: 3em;
+}
+
+.section2 .inline {
+  line-height: 1.4em;
+  padding-right: 3em;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  font-size: 1.1em;
+}
+
+.section2 .full {
+  line-height: 1.4em;
+  padding-right: 3em;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  font-size: 1.1em;
+  padding-left: 3em !important;
+  text-indent: 1.2em;
+}
+
+.section2 .headline::first-letter {
+  font-size: 3em;
+  color: #f7770f;
+}
+
+.section2 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section2 .flex ol {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.1em;
+  display: block;
+  padding-left: 5em;
+  float: left;
+}
+
+.section2 .flex ol li::marker {
+  content: "✔";
+  color: greenyellow;
+}
+
+.section2 .flex ol li {
+  line-height: 1.4em;
+  padding-left: 1em;
+  color: white;
+  font-weight: bold;
+}
+
+.section2 .flex ol ul {
+  font-size: 1.1rem;
+  display: block;
+}
+
+.section2 .flex ol ul li::marker {
+  content: "➡";
+  color: #ffffff;
+}
+
+.section3 {
+  background-image: url("../src/background-about-section3.svg");
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+}
+
+.section3 #clanguages {
+  float: left;
+  padding: 2em;
+  border-radius: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 1.5em;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+
+.section3 h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 2.2em;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-top: 0;
+  margin-top: 0;
+  font-weight: bolder;
+}
+
+.section3 h2:hover {
+  color: #0066ff;
+}
+
+.section3 .dreapta {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.4em;
+  text-indent: 1.1em;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  padding-right: 3em;
+  font-size: 1.1em;
+}
+
+.section3 .dreapta::first-letter {
+  font-size: 3em;
+  color: #0066ff;
+}
+
+.section3 .normal {
+  font-family: "Hind Siliguri", sans-serif;
+  line-height: 1.4em;
+  font-size: 1.1em;
+  text-indent: 1.1em;
+  padding-right: 3em;
+  padding-left: 3em;
+  color: white;
+}
+
+.section3 table {
+  font-family: "Hind Siliguri", sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  margin-top: 3em;
+  margin-bottom: 3.5em;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.section3 table td,
+.section3 table th {
+  border: 0.7px solid #ddd;
+  padding: 0.5em;
+}
+
+.section3 table th {
+  background-color: #0066ff;
+}
+
+.section3 table tr,
+.section3 table td {
+  background-color: #009473;
+}
+
+.section3 td:hover {
+  background-color: #f7770f;
+}
+
+.section3 .def {
+  text-align: center;
+}
+
+.section4 {
+  background-image: url("../src/background-about-section4.svg");
+  background-position: center;
+  background-blend-mode: overlay;
+  overflow: hidden;
+  width: 100%;
+  height: 1600px;
+}
+
+.section4 #javacs {
+  padding: 2em;
+  float: left;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+}
+
+.section4 h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 2.2em;
+  cursor: pointer;
+  font-weight: bolder;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.section4 h2:hover {
+  color: #f7770f;
+}
+
+.section4 .near-image {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.4em;
+  text-indent: 1.1em;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  padding-right: 3em;
+  font-size: 1.1em;
+}
+
+.section4 .under-image {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.4em;
+  text-indent: 1.1em;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  padding-right: 3em;
+  padding-left: 3em;
+  font-size: 1.1em;
+}
+
+.section4 .near-image::first-letter {
+  font-size: 3em;
+  color: #f7770f;
+}
+
+.section4 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.section4 .icons img {
+  padding: 2em;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.section4 .icons img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.section5 {
+  background-blend-mode: overlay;
+  background-image: url("../src/background-about-section5.svg");
+  width: 100%;
+  height: 1200px;
+}
+
+.section5 #frontend {
+  padding: 2em;
+  float: left;
+}
+
+.section5 h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 2.2em;
+  cursor: pointer;
+  font-weight: bolder;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-top: 0;
+  margin-top: 0;
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+.section5 h2:hover {
+  color: #009473;
+}
+
+.section5 .near-image {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.4em;
+  text-indent: 1.1em;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  padding-right: 3em;
+  font-size: 1.1em;
+}
+
+.section5 .under-image {
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.4em;
+  text-indent: 1.1em;
+  font-family: "Hind Siliguri", sans-serif;
+  color: white;
+  padding-right: 3em;
+  padding-left: 3em;
+  font-size: 1.1em;
+}
+
+.section5 .near-image::first-letter {
+  font-size: 3em;
+  color: #009473;
+}
+
+.section6 {
+  background-image: url(../src/background-about-section6.svg);
+  background-blend-mode: overlay;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+}
+
+.section6 .on {
+  text-align: center;
+  padding: 4em;
+  padding-bottom: 1em;
+  color: white;
+  font-size: 1.9em;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transform: translateX(20);
+  transform: translateX(20);
+  display: block;
+  cursor: pointer;
+}
+
+.section6 h3 {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  font-family: "Open-Sans", sans-serif;
+  cursor: pointer;
+}
+
+.section6 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.section6 .flex h4 {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.section6 .flex h4:nth-child(even) {
+  color: #6600ff;
+}
+
+.section6 .flex h4:nth-child(even):hover {
+  color: #ffff;
+}
+
+.section6 .flex h4:hover {
+  color: #6600ff;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}

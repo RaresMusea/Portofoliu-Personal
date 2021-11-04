@@ -1,0 +1,471 @@
+/*Fisier about.css->Descrie aspectul si design-ul paginii ce surprinde calatoria mea in lumea programarii*/
+
+.section1 {
+  background-image: url("../src/wave-haikei.svg");
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+  overflow: hidden;
+
+  .connect {
+    margin-top: 1em;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 3%;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 2s;
+    padding: 0.2em;
+    z-index: 1;
+
+    .collapse {
+      i {
+        margin: 1em;
+      }
+    }
+
+    .unseen {
+      transition: 2s;
+      i {
+        display: none;
+      }
+    }
+
+    .seen {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      transition: 2s;
+      height: 10px;
+      i {
+        display: block;
+        padding-top: 0.2em;
+      }
+    }
+
+    i {
+      transition: 2s;
+    }
+
+    i:hover {
+      color: #f7770f;
+    }
+
+    i:active {
+      color: #0066ff;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  img {
+    margin: 0 auto;
+    display: block;
+    padding: 2em;
+    transform: translateX(0);
+    transition: transform 2s;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .block {
+    display: block;
+    color: white;
+    font-size: 2.5em;
+    float: right;
+    text-align: center;
+    right: 5%;
+    position: relative;
+    bottom: 40%;
+    font-weight: bolder;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.section2 {
+  background-image: url("../src/background-about-section2.svg");
+  width: 100;
+  height: 1700px;
+  overflow: hidden;
+
+  h2 {
+    padding-top: 0em;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.2em;
+    margin-top: 0;
+    color: #f7770f;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bolder;
+  }
+
+  h2:hover {
+    color: #ffffff;
+  }
+
+  .gif1 {
+    display: block;
+    padding-left: 2em;
+    float: left;
+    transform: translateY(-50px);
+  }
+
+  .headline {
+    padding-top: 1.5em;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    color: white;
+    font-family: "Hind Siliguri", sans-serif;
+    padding-left: 2em;
+    text-indent: 1.2em;
+    padding-right: 3em;
+  }
+
+  .inline {
+    line-height: 1.4em;
+    padding-right: 3em;
+    font-family: "Hind Siliguri", sans-serif;
+    color: white;
+    font-size: 1.1em;
+  }
+
+  .full {
+    line-height: 1.4em;
+    padding-right: 3em;
+    font-family: "Hind Siliguri", sans-serif;
+    color: white;
+    font-size: 1.1em;
+    padding-left: 3em !important;
+    text-indent: 1.2em;
+  }
+  .headline::first-letter {
+    font-size: 3em;
+    color: #f7770f;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ol {
+      font-family: "Hind Siliguri", sans-serif;
+      font-size: 1.1em;
+      display: block;
+      padding-left: 5em;
+      float: left;
+      li::marker {
+        content: "✔";
+        color: greenyellow;
+      }
+      li {
+        line-height: 1.4em;
+        padding-left: 1em;
+        color: white;
+        font-weight: bold;
+      }
+
+      ul {
+        font-size: 1.1rem;
+        display: block;
+        li::marker {
+          content: "➡";
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.section3 {
+  background-image: url("../src/background-about-section3.svg");
+  width: 100%;
+  height: 2000px;
+  overflow: hidden;
+
+  #clanguages {
+    float: left;
+    padding: 2em;
+    border-radius: 30px;
+    transition: 1s;
+    margin-top: 1.5em;
+    transform: translateY(40px);
+  }
+
+  h2 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: bolder;
+  }
+
+  h2:hover {
+    color: #0066ff;
+  }
+
+  .dreapta {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.4em;
+    text-indent: 1.1em;
+    font-family: "Hind Siliguri", sans-serif;
+    color: white;
+    padding-right: 3em;
+    font-size: 1.1em;
+  }
+
+  .dreapta::first-letter {
+    font-size: 3em;
+    color: #0066ff;
+  }
+
+  .normal {
+    font-family: "Hind Siliguri", sans-serif;
+    line-height: 1.4em;
+    font-size: 1.1em;
+    text-indent: 1.1em;
+    padding-right: 3em;
+    padding-left: 3em;
+    color: white;
+  }
+
+  table {
+    font-family: "Hind Siliguri", sans-serif;
+    border-collapse: collapse;
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer;
+    margin-top: 3em;
+    margin-bottom: 3.5em;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    td,
+    th {
+      border: 0.7px solid #ddd;
+      padding: 0.5em;
+    }
+    th {
+      background-color: #0066ff;
+    }
+    tr,
+    td {
+      background-color: #009473;
+    }
+  }
+  td:hover {
+    background-color: #f7770f;
+  }
+
+  .def {
+    text-align: center;
+  }
+}
+
+.section4 {
+  background-image: url("../src/background-about-section4.svg");
+  background-position: center;
+  background-blend-mode: overlay;
+  overflow: hidden;
+  width: 100%;
+  height: 1600px;
+
+  #javacs {
+    padding: 2em;
+    float: left;
+    transform: translateY(30px);
+  }
+
+  h2 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.3s;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  h2:hover {
+    color: #f7770f;
+  }
+  .near-image {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.4em;
+    text-indent: 1.1em;
+    font-family: "Hind Siliguri", sans-serif;
+    color: white;
+    padding-right: 3em;
+    font-size: 1.1em;
+  }
+
+  .under-image {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.4em;
+    text-indent: 1.1em;
+    font-family: "Hind Siliguri", sans-serif;
+    color: white;
+    padding-right: 3em;
+    padding-left: 3em;
+    font-size: 1.1em;
+  }
+
+  .near-image::first-letter {
+    font-size: 3em;
+    color: #f7770f;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+
+    img {
+      padding: 2em;
+      transition: 0.25s;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.section5 {
+  background-blend-mode: overlay;
+  background-image: url("../src/background-about-section5.svg");
+  width: 100%;
+  height: 1200px;
+
+  #frontend {
+    padding: 2em;
+    float: left;
+  }
+
+  h2 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 2.2em;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.3s;
+    padding-top: 0;
+    margin-top: 0;
+    transform: translateY(-30px);
+  }
+
+  h2:hover {
+    color: #009473;
+  }
+
+  .near-image {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.4em;
+    text-indent: 1.1em;
+    font-family: "Hind Siliguri", sans-serif;
+    color: white;
+    padding-right: 3em;
+    font-size: 1.1em;
+  }
+
+  .under-image {
+    margin-top: 0;
+    padding-top: 0;
+    line-height: 1.4em;
+    text-indent: 1.1em;
+    font-family: "Hind Siliguri", sans-serif;
+    color: white;
+    padding-right: 3em;
+    padding-left: 3em;
+    font-size: 1.1em;
+  }
+
+  .near-image::first-letter {
+    font-size: 3em;
+    color: #009473;
+  }
+}
+
+.section6 {
+  background-image: url(../src/background-about-section6.svg);
+  background-blend-mode: overlay;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+
+  .on {
+    text-align: center;
+    padding: 4em;
+    padding-bottom: 1em;
+    color: white;
+    font-size: 1.9em;
+    font-family: "Open-Sans", sans-serif;
+    transition: transform 2s;
+    transform: translateX(20);
+    display: block;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+    font-family: "Open-Sans", sans-serif;
+    cursor: pointer;
+  }
+
+  .flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+
+    h4 {
+      padding-left: 1em;
+      padding-right: 1em;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+    }
+    h4:nth-child(even) {
+      color: #6600ff;
+    }
+
+    h4:nth-child(even):hover {
+      color: #ffff;
+    }
+
+    h4:hover {
+      color: #6600ff;
+      transform: translateY(10px);
+    }
+  }
+}

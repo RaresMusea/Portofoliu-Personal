@@ -1,0 +1,364 @@
+/*Fisier portofoliu.css->Defineste stilurile ce se vor aplica pentru pagina de portofoliu a site-ului*/
+
+.section1 {
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../src/Carusel/wave-haikei.svg);
+  background-position: center;
+  background-blend-mode: overlay;
+  margin: 0 auto;
+
+  .invisible {
+    display: none;
+  }
+
+  .visible {
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    color: white;
+    padding-top: 2rem;
+    font-weight: bolder;
+    font-size: 3em;
+    text-align: center;
+    transition: 3s;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .shown {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    animation: moveX 3s forwards;
+    cursor: pointer;
+  }
+
+  .up {
+    text-align: center;
+    transition: 3s;
+    font-size: 2em;
+    font-weight: bolder;
+    animation: moveY 5s forwards;
+  }
+
+  @keyframes moveY {
+    0% {
+      transform: translateY(200px);
+    }
+
+    25% {
+      transform: translateY(-50px);
+    }
+
+    50% {
+      transform: translateY(-50px);
+    }
+
+    75% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes moveX {
+    0% {
+      transform: translateX(250px);
+    }
+
+    100% {
+      transform: translateX(-10px);
+    }
+  }
+
+  .carousel {
+    align-items: center;
+    display: flex;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+    width: 800px;
+
+    .carousel_images {
+      display: flex;
+      transform: translateX(0);
+      transition: 0.5s;
+    }
+
+    img {
+      border-radius: 15px;
+    }
+
+    .carousel_button {
+      background: #002233;
+      color: white;
+      border: 0;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      font-weight: bold;
+      height: 3rem;
+      opacity: 0.25;
+      position: absolute;
+      transition: opacity 0.25s;
+      width: 3rem;
+      z-index: 1;
+
+      &.previous {
+        left: 5px;
+      }
+
+      &.next {
+        right: 5px;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+    animation: translation 2s forwards;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 2.4em;
+  }
+
+  @keyframes translation {
+    0% {
+      transform: translateX(-350px);
+    }
+
+    100% {
+      transform: translateX(10px);
+    }
+  }
+
+  .connect {
+    margin-top: 1em;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 3%;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 2s;
+    padding: 0.2em;
+
+    .collapse {
+      i {
+        margin: 1em;
+      }
+    }
+
+    .unseen {
+      transition: 2s;
+      i {
+        display: none;
+      }
+    }
+
+    .seen {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      transition: 2s;
+      height: 10px;
+      i {
+        display: block;
+        padding-top: 0.2em;
+      }
+    }
+
+    i {
+      transition: 2s;
+    }
+
+    i:hover {
+      color: #f7770f;
+    }
+
+    i:active {
+      color: #0066ff;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.section2 {
+  background-image: url("../src/wave-haikei7.svg");
+  background-blend-mode: overlay;
+  background-position: center;
+  overflow: hidden;
+  height: auto;
+
+  img {
+    padding: 2em;
+    float: left;
+  }
+  span {
+    h2 {
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      color: #f7770f;
+      font-weight: bolder;
+      font-size: 2em;
+      padding-top: 1em;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-family: "Hind Siliguri", sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: white;
+    font-size: 1em;
+    text-indent: 1em;
+    font-weight: bolder;
+  }
+
+  h3 {
+    padding-top: 0.5em;
+    font-family: "Open Sans", sans-serif;
+    color: #f7770f;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  ol {
+    color: #f7770f;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: bolder;
+    li {
+      p {
+        text-indent: 0;
+      }
+    }
+  }
+
+  ol {
+    i {
+      color: #f7770f;
+      font-weight: bolder;
+      padding-left: 1em;
+    }
+  }
+
+  .container-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    a {
+      text-decoration: none;
+    }
+    .card1 {
+      background: #1b1d1f;
+      width: 30%;
+      height: auto;
+      margin-left: 2em;
+      margin-top: 5em;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-right: 0.5em;
+      flex-grow: 0;
+      padding-bottom: 1em;
+
+      h4 {
+        color: white;
+        text-align: center;
+        padding: 1em;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-family: "Hind Siliguri", sans-serif;
+        font-size: 1.1em;
+
+        i {
+          padding-right: 0.3em;
+        }
+      }
+
+      img {
+        transition: 0.2s;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+
+      hr {
+        color: #dddddd;
+        width: 80%;
+        opacity: 0.2;
+      }
+
+      .end {
+        color: #dddddd;
+        width: 85%;
+        opacity: 0.2;
+      }
+
+      p {
+        font-size: 1em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        color: white;
+        padding-bottom: 1em;
+      }
+
+      button {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background-color: #f7770f;
+        color: white;
+        font-size: 1em;
+        padding: 0.5em;
+        transition: 2s;
+        margin-bottom: 1em;
+        margin-top: 2em;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        transform: translateY(10px);
+      }
+    }
+  }
+}
+
+.section3 {
+  overflow: hidden;
+  background-image: url("../src/wave-haikei9.svg");
+  width: 100%;
+  height: 200px;
+}

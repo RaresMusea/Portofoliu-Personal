@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Survey Form-Programming In General</title>
+</head>
+<body>
+  <main class="content">
+    <h1 id="title">Survey-Programming in general</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve this wide world of programming!</em></p>
+
+    <div class="form-start">
+      <form id="survey-form">
+        <div class="items">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name">
+        </div>
+
+        <div class="items">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email">
+        </div>
+
+        <div class="items">
+          <label for="number" id="number-label">Age(Optional)</label>
+          <input type="number" id="number" name="number" required placeholder="Your Age" min="12" max="99" aria-required="false">
+        </div>
+
+        <div class="items2">
+          <label for="dropdown" id="dropdown-label">What's your favorite programming language?</label>
+          <select name="choice" id="dropdown">
+            <option value=""  selected disabled>--Please choose an option--</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Pascal">Pascal</option>
+            <option value="Delphi">Delphi</option>
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+            <option value="MATLAB">MATLAB</option>
+            <option value="R">R</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Go">Go</option>
+            <option value="PHP">PHP</option>
+          </select>
+        </div>
+
+        <div class="items3">
+          <p>Why do you like Programming?</p>
+          <div>
+            <input type="radio" id="first" name="why" value="first">
+            <label for="first">Because I can make a lot of money.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="second" name="why" value="second">
+            <label for="first">Because I love when I solve bugs and problems.</label>
+          </div>
+
+          <div>
+            <input type="radio" id="third" name="why" value="third">
+            <label for="first">Because it's my passion</label>
+          </div>
+
+          <div>
+            <input type="radio" id="fourth" name="why" value="fourth">
+            <label for="first">Because it's my passion</label>
+          </div>
+        </div>
+
+        <div class="items4">
+          <p>What field / fields of computer science do you work in / would you like to work in?<br>(Check all that apply).</p>
+          <div>
+            <input type="checkbox" id="sd" name="sd" checked value="software">
+            <label for="sd">Software Development</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="hd" name="hd" value="hardware">
+            <label for="hd">Hardware (Computer Engineering)</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="front" name="front" value="front">
+            <label for="front">Front-End Web Development</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="back" name="back" value="back">
+            <label for="back">Back-End Web Development</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="full" name="full" value="full">
+            <label for="full">Full Stack Web Development</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="des" name="des" value="des">
+            <label for="des">Graphic Design (UI/UX)</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="wdes" name="wdes" value="wdes">
+            <label for="wdes">Web Design</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="gdev" name="gdev" value="gdev">
+            <label for="gdev">Game Development</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="devops" name=" devops" value="devops">
+            <label for="devops">DevOps</label>
+          </div>
+
+        <div>
+          <input type="checkbox" id="db" name="db" value="db">
+          <label for="db">Database Admin (DBA)</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="other" name="other" value="other">
+          <label for="other">Other</label>
+        </div>
+        </div>
+
+        <div class="items5">
+          <label for="story">Tell us your stoy as a programmer:</label>
+          <textarea placeholder="Type your story here" id="story" name="story" ></textarea>
+        </div>
+        <div class="form-end">
+        <button id="submit">SUBMIT</button></div>
+      </form>
+    </div>
+</main>
+</body>
+</html>

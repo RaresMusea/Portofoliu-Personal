@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="imgage/png" href="../favicon/favicon-32x32.png">
+  <link rel="stylesheet" href="../styles/app.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>BATTLESHIPS</title>
+</head>
+<body>
+  <video autoplay muted loop id="background">
+    <source src="../misc/background.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+  <h1 class="logo"><a href="/res/index.html">BATTLESHIPS</a></h1>
+  <h3 class="desc">A point and click strategy game designed by Rareș-Gabriel Mușea</h3>
+</div>
+
+<div class="menu">
+  <button class="btn1"><a href="singleplayer.html">BATTLESHIPS (Player VS AI)</a></button>
+  <button class="btn2"><a href="#">BATTLESHIPS (PVP)</a></button>
+  <button class="btn3"><a href="#">BATTLESHIPS Multiplayer</a></button>
+  <button class="btn4" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#">BATTLESHIPS Rules</a></button>
+</div>
+
+<!--Popup Modal-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title title-popup" id="exampleModalLabel">BATTLESHIPS-Game Rules</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text">Battleships is a strategy type guessing game for two players. It is played on ruled grids (paper or board) on which each player's fleet of ships (including battleships) are marked. The locations of the fleets are concealed from the other player. Players alternate turns calling "shots" at the other player's ships, and the objective of the game is to destroy the opposing player's fleet.</p><br>
+        <h6 class="sub">BATTLESHIPS-Player VS AI Mode</h6><br>
+        <p class="text">For this game mode,the players have to drag and drop each ship from the fleet area to the user grid,which can be found on the left side of the page.The warships from the fleet area can be even rotated or deck swapped.Deck swap is a feature that the author decided to add to the game.This feature was taken from another board game that inherits this one-Avioanele or Warplanes.It's an old romanian old game,where each piece dropped onto the game board will have a weakspot.If the enemy manages to hit that weakspot,the entire element (in out case-the entire warship will be destroyed).In order to make the game even more complex,we decided to add this special button which allows the player to change the weakspot (deck) of the ship.By default,the deck is placed at the end of the ship (for both vertical and horizontal positioning).This aspect can be change anytime before the game start,so if the user wants for a certain warship to swap the deck in order to form his own strategy,he can do that by simply pressing the 'Swap Decks' Button.The 'Rotate' button was created for a better positioning of the ships inside de grid.Ships can be flipped both vertically and horizontally. If they want their warships to be randomly generated,they can press the 'Auto Align Ships'.button.After that,they can press the Start Battle Button,which will become enabled shortly.After a ship is placed inside the user grid, an imaginary border that surrounds the warship will pe placed in order
+        to differentiate  the ships and prevent them from colliding. </p><br>
+        <p class="text">The computer's warship will be automatically generated.The random ship spawning algorithm is identical to the one that was used for spawning the user's warships.After game starts,the player will have to make the first move.Using left mouse button,the player will have to guess where,in the computer's grid the ships are placed. If the square from the grid that a player selected turns red,a piece of the ship will be considered destroyed and it cannot be accessed in the following moves.If the square turns white,that means that the square which the player has chosen did not contain any portion of any opponent's warship.If multiple squares turn red after a player moved and a striped border appears arround those squares marked in red,this means that the current player has guessed the specific area of the weakpoint of one of the five ships from the enemy's board.In that case,that ship is considered destroyed an its surrounding squares representing the border or the squares that make it up are unaccessible. The main goal is to destroy all of the enemy warships  and keep as many ships in your fleet intact as possible. </p><br><br>
+        <h6 class="sub">BATTLESHIPS-Types of Warships</h6><br>
+        <ul class="lista">
+          <li>Destroyer-the ship with a length of 2 sqares</li>
+          <li>Submarine-the ship with a length of 3 sqares</li>
+          <li>Cruiser-the other ship with a length of 3 sqares</li>
+          <li>Battleship-the ship with a length of 4 sqares</li>
+          <li>Aircraft Carrier-the ship with a length of 5 sqares</li>
+        </ul>
+        <br><br><br>
+        <h3 class="grace">Good Luck and Fair Seas!</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

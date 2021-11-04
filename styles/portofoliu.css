@@ -1,0 +1,469 @@
+/*Fisier portofoliu.css->Defineste stilurile si designul ce se vor aplica pentru pagina de portofoliu a site-ului*/
+.section1 {
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../src/Carusel/wave-haikei.svg);
+  background-position: center;
+  background-blend-mode: overlay;
+  margin: 0 auto;
+}
+
+.section1 .invisible {
+  display: none;
+}
+
+.section1 .visible {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  color: white;
+  padding-top: 2rem;
+  font-weight: bolder;
+  font-size: 3em;
+  text-align: center;
+  -webkit-transition: 3s;
+  transition: 3s;
+  cursor: pointer;
+}
+
+.section1 .hidden {
+  display: none;
+}
+
+.section1 .shown {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  -webkit-animation: moveX 3s forwards;
+  animation: moveX 3s forwards;
+  cursor: pointer;
+}
+
+.section1 .up {
+  text-align: center;
+  -webkit-transition: 3s;
+  transition: 3s;
+  font-size: 2em;
+  font-weight: bolder;
+  -webkit-animation: moveY 5s forwards;
+  animation: moveY 5s forwards;
+}
+
+@-webkit-keyframes moveY {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+  }
+  25% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  50% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  75% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes moveY {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+  }
+  25% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  50% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  75% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+}
+
+@-webkit-keyframes moveX {
+  0% {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes moveX {
+  0% {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+
+.section1 .carousel {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+}
+
+.section1 .carousel .carousel_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.section1 .carousel img {
+  border-radius: 15px;
+}
+
+.section1 .carousel .carousel_button {
+  background: #002233;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  height: 3rem;
+  opacity: 0.25;
+  position: absolute;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  width: 3rem;
+  z-index: 1;
+}
+
+.section1 .carousel .carousel_button.previous {
+  left: 5px;
+}
+
+.section1 .carousel .carousel_button.next {
+  right: 5px;
+}
+
+.section1 .carousel .carousel_button:hover {
+  opacity: 0.5;
+}
+
+.section1 .hide {
+  display: none;
+}
+
+.section1 .show {
+  display: block;
+  -webkit-animation: translation 2s forwards;
+  animation: translation 2s forwards;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 2.4em;
+}
+
+@-webkit-keyframes translation {
+  0% {
+    -webkit-transform: translateX(-350px);
+    transform: translateX(-350px);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes translation {
+  0% {
+    -webkit-transform: translateX(-350px);
+    transform: translateX(-350px);
+  }
+  100% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+.section1 .connect {
+  margin-top: 1em;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  width: 3%;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 2s;
+  transition: 2s;
+  padding: 0.2em;
+}
+
+.section1 .connect .collapse i {
+  margin: 1em;
+}
+
+.section1 .connect .unseen {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.section1 .connect .unseen i {
+  display: none;
+}
+
+.section1 .connect .seen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: 2s;
+  transition: 2s;
+  height: 10px;
+}
+
+.section1 .connect .seen i {
+  display: block;
+  padding-top: 0.2em;
+}
+
+.section1 .connect i {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.section1 .connect i:hover {
+  color: #f7770f;
+}
+
+.section1 .connect i:active {
+  color: #0066ff;
+}
+
+.section1 .connect a {
+  text-decoration: none;
+  color: black;
+}
+
+.section2 {
+  background-image: url("../src/wave-haikei7.svg");
+  background-blend-mode: overlay;
+  background-position: center;
+  overflow: hidden;
+  height: auto;
+}
+
+.section2 img {
+  padding: 2em;
+  float: left;
+}
+
+.section2 span h2 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  color: #f7770f;
+  font-weight: bolder;
+  font-size: 2em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+
+.section2 p {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  color: white;
+  font-size: 1em;
+  text-indent: 1em;
+  font-weight: bolder;
+}
+
+.section2 h3 {
+  padding-top: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  color: #f7770f;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.section2 ol {
+  color: #f7770f;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bolder;
+}
+
+.section2 ol li p {
+  text-indent: 0;
+}
+
+.section2 ol i {
+  color: #f7770f;
+  font-weight: bolder;
+  padding-left: 1em;
+}
+
+.section2 .container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.section2 .container-flex a {
+  text-decoration: none;
+}
+
+.section2 .container-flex .card1 {
+  background: #1b1d1f;
+  width: 30%;
+  height: auto;
+  margin-left: 2em;
+  margin-top: 5em;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-right: 0.5em;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  padding-bottom: 1em;
+}
+
+.section2 .container-flex .card1 h4 {
+  color: white;
+  text-align: center;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.1em;
+}
+
+.section2 .container-flex .card1 h4 i {
+  padding-right: 0.3em;
+}
+
+.section2 .container-flex .card1 img {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.section2 .container-flex .card1 img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.section2 .container-flex .card1 hr {
+  color: #dddddd;
+  width: 80%;
+  opacity: 0.2;
+}
+
+.section2 .container-flex .card1 .end {
+  color: #dddddd;
+  width: 85%;
+  opacity: 0.2;
+}
+
+.section2 .container-flex .card1 p {
+  font-size: 1em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.section2 .container-flex .card1 button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7770f;
+  color: white;
+  font-size: 1em;
+  padding: 0.5em;
+  -webkit-transition: 2s;
+  transition: 2s;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.section2 .container-flex .card1 button:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.section3 {
+  overflow: hidden;
+  background-image: url("../src/wave-haikei9.svg");
+  width: 100%;
+  height: 200px;
+}

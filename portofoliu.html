@@ -1,0 +1,287 @@
+<!--Fisier portofoliu.html->Fisier ce descrie strucutra paginii de portofoliu, unde se pot gasi legaturi externe catre alte pagini create tot de mine. In cazul in care numarul de cerinte aferente acestui site (site-ul de portofoliu) nu este conform cu acela din cerinta, aceasta este pentru ca am compensat absenta acestui numar cu alte pagini web, create tot de mine in ultima perioada a timpului (acest an).-->
+
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mușea Rareș-Gabriel-Portofoilu Personal</title>
+  <script src="https://kit.fontawesome.com/4c0ae9b205.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/newsletter.css">
+  <link rel="stylesheet" href="styles/portofoliu.css">
+</head>
+
+<body>
+  <!--Meniu interactiv de navigatie-->
+  <nav class="navigation" id="nav">
+    <div class="left">
+      <i class="fas fa-layer-group fa-2x"></i>
+      <a href="portofoliu.html">Mușea Rareș-Gabriel-Portofoliu</a>
+    </div>
+
+    <div class="right">
+      <ul>
+        <li><a href="index.html" class="acasa">Acasă</a></li>
+        <li><a href="portofoliu.html" class="portofoliu">Portofoliu</a></li>
+        <li><a href="about.html" class="about">Background</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Sectiunea 1-->
+  <section class="section1">
+    <div class="connect">
+      <!--Lista derulanta interactiva a link-urilor de contact-->
+      <div class="collpase"><i class="fas fa-link off" id="toggle"></i></div>
+
+      <div class="unseen links_list" id="links">
+        <a href="https://www.facebook.com/rares.musea" title="Facebook" target="_blank"><i
+            class="fab fa-facebook link"></i></a>
+        <a href="https://www.instagram.com/_raresmusea_2001_/" title="Instagram" target="_blank"><i
+            class="fab fa-instagram link"></i></a>
+        <a href="https://github.com/RaresMusea" title="Github" target="_blank"><i class="fab fa-github link"></i></a>
+        <a href="https://www.linkedin.com/in/rares-gabriel-musea-325b4a214/" title="LinkedIn"><i
+            class="fab fa-linkedin link"></i></a>
+        <a href="https://www.youtube.com/channel/UC5sDN4MhqEyRk66qRETA2fw" target="_blank" title="YouTube"><i
+            class="fab fa-youtube link"></i></a>
+        <a href="mailto:raresmusea001@gmail.com" title="Trimite-mi un mail"><i class="fas fa-at link "></i></a>
+        <a href="#nav"><i class="fas fa-arrow-up link"></i></a>
+        <a href="#footer"><i class="fas fa-arrow-down link"></i></a>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <button class="carousel_button previous" id="previous"><i class="fas fa-chevron-left"></i></button>
+      <div class="carousel_images">
+        <img src="src/Carusel/movement.java.svg" alt="Java" width="800" height="500">
+        <img src="src/Carusel/hanoi.cs.svg" alt="C#" width="800" height="500">
+        <img src="src/Carusel/chatbot.py.svg" alt="Python" width="800" height="500">
+        <img src="src/Carusel/opacity.js (1).svg" alt="Javascript" width="800" height="500">
+        <img src="src/Carusel/2.jpg" alt="Battleships" width="800" height="500">
+        <img src="src/Carusel/base.png" alt="Base Converter&Calculator" width="800" height="500">
+      </div>
+      <button class="carousel_button next" id="next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <h1 class="hide title">Au trecut peste 7 ani de când am început să învăț programare.</h1>
+    <h1 class="hide title"> De-a lungul acestor ani, am realizat peste <font color="#f7770f">50 de proiecte</font>
+      complexe, care m-au ajutat să evoluez și să valorific toate noțiunile studiate.</h1>
+  </section>
+
+  <!--Seciunea 2:Detalii-->
+  <section class="section2">
+
+    <div>
+      <img src="src/programming.png" alt="Programming" height="400">
+      <span>
+        <blockquote>
+          <h2>Portofoliul meu</h2>
+        </blockquote>
+      </span>
+    </div>
+
+    <article>
+      <p>
+        Această secțiune a paginii este dedicată celor mai reprezentative proiecte, respectiv aplicații la care am
+        reușit să lucrez sau să contribui în ultima vreme.</p>
+      <h3>Mențiuni:</h3>
+      <ol>
+        <li>
+          <p>Proiectele de tip web vor fi semnalate prin intermediul icon-ului<i class="fas fa-globe"></i></p>
+        </li>
+        <li>
+          <p>Prin apăsarea butoanelor cu textul <cite><i><b>
+                  <font color="#f7770f">”Apăsați pentru a vedea proiectul”</font>
+                </b></i></cite>,&nbsp;&nbsp;un nou tab se va deschide în browser,&nbsp;&nbsp permițând accesarea și
+            implicit vizualizarea proiectelor de tip web în browser.
+          </p>
+        </li>
+        <li>
+          <p>Proiectele de tip consolă sau cele cu interfață grafică,&nbsp;&nbsp; ce nu vor putea fi vizaulizate în
+            browser vor fi marcate prin intermediul icon-ului <i class="fas fa-terminal"></i></p>
+        </li>
+        <li>
+          <p>Pentru ultimul tip de proiect menționat,&nbsp;&nbsp; vizualizarea presupune accesarea repository-ului
+            Github aferent proiectului,&nbsp;&nbsp; cu posibilitatea accesării codului sursă aferent aplicației în
+            cauză. </p>
+        </li>
+
+      </ol>
+    </article>
+    <br><br>
+    <!--Prezentare proiecte-->
+    <div class="container-flex">
+      <div class="card1">
+        <h4><i class="fas fa-globe"></i>Formula 1-Analiza evenimentelor (1950-2020)</h4>
+        <img src="src/wallpaperflare.com_wallpaper (1).jpg" alt="">
+        <hr>
+        <p>Proiectul este o aplicație Web ce urmărește o analiză cât mai clară a datelor referitoare la toate
+          evenimentele de Formula 1 desfășurate din 1950,&nbsp;&nbsp; până în 2020 inclusiv.&nbsp;&nbsp;S-a folosit
+          limbajul <b>Python</b>,&nbsp;&nbsp;alături de trei framework-uri specializate pe data analysis (<b>
+            Pandas</b>,&nbsp;&nbsp; <b> Bokeh</b>,&nbsp;&nbsp; <b> Leaflet </b>) pentru realizarea
+          infograficelor,&nbsp;&nbsp; respeciv a graficelor,&nbsp;&nbsp; cât și anumite platforme online gratuite
+          pentru reprezentarea tabelară sau sub formă de diagrame a unora dintre date.&nbsp;&nbsp;Pentru markup și
+          funcționalitate,&nbsp;&nbsp; s-au utilizat <b>HTML5,&nbsp;&nbsp; </b><b>CSS3</b> și,&nbsp;&nbsp; respectiv
+          <b>Javascipt</b>,&nbsp;&nbsp; iar pentru layout-ul responsive al paginii,&nbsp;&nbsp; s-a utilizat
+          <b>Bootstrap</b>.
+        </p>
+        <hr class="end">
+        <a href="F1 ANALYSIS/FORMULA-1-ANALYSIS/index.html" alt="connect" targer="_blank"
+          title="Apăsați pentru a vedea proiectul"><button>Apăsați pentru a vedea proiectul</button></a>
+      </div>
+
+      <div class="card1">
+        <h4><i class="fas fa-terminal"></i>Jocul Turnurilor din Hanoi</h4>
+        <img src="src/Cover_v2 (2).png" alt="Turnurile din Hanoi">
+        <hr>
+        <p>Această aplicație am creat-o în timpul Anului I de facultate,&nbsp;la materia <i>Tehnici de
+            Programare</i>.Proiectul în sine este o aplicație <b> Desktop</b>,&nbsp; ce poate permite utilizatorului
+          să joace 2 moduri de joc diferite ale jocului <b> Turnurilor din Hanoi</b>.&nbsp;Pentru implementarea
+          interfeței grafice,&nbsp;a regulamentului,&nbsp;cât și a alogoritmului specific jocului,&nbsp;am utilizat
+          limbajul C#,&nbsp;cât și mediul de dezvoltare Microsoft Visual Studio,&nbsp; altături de package-ul
+          WinForms,&nbsp;care mi-a permis dezvoltarea unei aplicații native Windows.&nbsp;Utilizatorul va putea să
+          joace atât de unul singur,&nbsp;cât și în doi jucători (local,&nbsp;pe același computer).</p>
+        <hr class="end">
+        <a href="https://github.com/RaresMusea/Jocul-Turnurilor-din-Hanoi" target="_blank" alt="connect"
+          title="Apăsați pentru a vedea proiectul"><button>Apăsați pentru a vedea codul proiectului</button></a>
+      </div>
+
+      <div class="card1">
+        <h4><i class="fas fa-globe"></i>Battleships-Joc în browser</h4>
+        <img src="src/wallpaperflare.com_wallpaper (2).jpg" alt="Battleships">
+        <hr>
+        <p>Primul meu joc creat vreodată,&nbsp;dar totodată,&nbsp;și dovada clară a faptului că aplicațiile web vor
+          rămâne mereu cea mai simplă formă de implementare a unei interfețe grafice.&nbsp;
+          La fel cum noi,&nbsp;românii jucam <b>Avioanele</b> pe foaia de hârtie,&nbsp;în copilărie,&nbsp;la fel și
+          americanii aveau acest joc simbolic.&nbsp;5 nave de luptă de dimensiuni diferite sau asemănătoare se
+          plasează pe un grid de 10x10,&nbsp;urmând ca ulterior fiecare din jucători să ghicească unde se află pe
+          grid-ul inamic navele adversare.&nbsp;Câștigător este cel care distruge primul toate navele
+          inamice.&nbsp;75% din acest proiect a fost codat exclusiv în Javascript, urmând ca restul de 25% să fie
+          realizate utilizând <B>HTML5</B> și <b>CSS3</b>.
+        </p>
+        <hr class="end">
+        <a href="Battleships/res/index.html" target="_blank" alt="connect"
+          title="Apăsați pentru a vedea proiectul"><button>Apăsați pentru a vedea proiectul</button></a>
+      </div>
+
+      <div class="card1">
+        <h4><i class="fas fa-globe"></i>Formular modern-Programarea în general</h4>
+        <img src="src/wallpaperflare.com_wallpaper (3).jpg" alt="Programare">
+        <hr>
+        <p>
+          Cu toții cunoaștem faptul că elementele <b>HTML</b> au un aspect relativ rudimentar,&nbsp; fără intervenția
+          utilizatorului în cel puțin o foaie de stil <b>CSS</b>.&nbsp; Cu toate acestea,&nbsp; CSS oferă posibilități
+          nelimitate în stilizarea modernă a paginilor,&nbsp; grație noilor proprietăți pentru display (<i> flexbox și
+            grid display </i> ).&nbsp; Pentru acest proiect,&nbsp; am utilizat flexbox-ul, alături de <b>HTML5</b> și
+          <b>CSS3</b> pentru construirea unui layout relativ modern:&nbsp;un formular despre domeniul care îmi place
+          cel mai mult,&nbsp; anume IT-ul și programarea.
+        </p><br><br>
+        <hr class="end">
+        <a href="Survey Form/index.html" target="_blank" alt="connect"
+          title="Apăsați pentru a vedea proiectul"><button>Apăsați pentru a vedea proiectul</button></a>
+      </div>
+
+      <div class="card1">
+        <h4><i class="fas fa-globe"></i>Convertor baze de numerație</h4>
+        <img src="src/wallpaperflare.com_wallpaper (4).jpg" alt="Programare">
+        <hr>
+        <p>
+          Am construit această aplicație pentru a putea aplica mai ușor cunoștințele acumulate în anul I de
+          facultate,&nbsp; la <b>Arhitectura Sistemelor de Calcul</b>.&nbsp; Proiectul în cazuă este o aplicație
+          web,&nbsp; construită în <b>HTML5,&nbsp; CSS3 și Javascript</b>,&nbsp; ce permite conversia unui număr
+          dintr-o bază de numerație cuprinsă între 2 și 16 într-o alta,&nbsp; încadrată în același interval,&nbsp; cât
+          și operații aritmetice de bază ( <i>adunări,&nbsp; scăderi,&nbsp; înmulțiri și împărțiri întregi</i>
+          ),&nbsp; într-o bază de numerație specificată.
+        </p><br><br><br>
+        <hr class="end">
+        <a href="Base Converter/index.html" target="_blank" alt="connect"
+          title="Apăsați pentru a vedea proiectul"><button>Apăsați pentru a vedea proiectul</button></a>
+      </div>
+
+      <div class="card1">
+        <h4><i class="fas fa-globe"></i>Website-Edward John Smith</h4>
+        <img src="src/wallpaperflare.com_wallpaper (5).jpg" alt="Programare">
+        <hr>
+        <p>
+          Pe lângă informatică,&nbsp; o altă pasiune de a mea este legată și de istoria vasului <b>RMS Titanic.</b>
+          &nbsp;Mai mult decât povestea tragică a pachebotului,&nbsp; care s-a scufundat în 1912,&nbsp; am manifestat
+          și o foarte mare curiozitate pentru omul din spatele cârmei, cel care a murit în apele înghețate ale
+          Atlanticului de Nord în încercarea de a salva viețile celor 2200 de pasageri aflați la bordrul vasului.
+          Această pagină i-am dedicat-o numai lui. Webiste-ul a fost creat utilizând exclusiv <b>HTML5 și CSS3</b>.
+        </p><br><br>
+        <hr class="end">
+        <a href="Tribute Page/index.html" target="_blank" alt="connect"
+          title="Apăsați pentru a vedea proiectul"><button>Apăsați pentru a vedea proiectul</button></a>
+      </div>
+
+      <!--Seciunea 3-->
+      <section class="section3">
+      </section>
+
+      <!--Modal ce se va declansa sub apasarea butonului cu textul Aboneaza-te la Newsletter, din subsolul paginii-->
+      <div class="modal-container" id="modal_container">
+        <div class="modal">
+          <h2>Abonează-te la Newsletter!</h2>
+          <form>
+            <div class="items">
+              <label for="name">
+                Nume și prenume
+              </label>
+              <input type="text" id="name" placeholder="Introduceți numele și prenumele">
+            </div>
+            <div class="items">
+              <label for="email">
+                Adresă de email
+              </label>
+              <input type="email" name="email" id="email" placeholder="Introduceți o adresă de email validă">
+
+            </div>
+            <div class="items">
+              <label for="picture">
+                Trimite o fotografie:
+                <input type="file" name="picture" id="picture">
+              </label>
+              <div class="buttons-list">
+                <input type="submit" value="Mă abonez la Newsletter" class="submit">
+                <input type="reset" value="Resetare" class="reset">
+                <button id="close" class="close">Închide</button>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--subsol pagina-->
+    <footer id="footer">
+      <div class="left-footer">
+        <div class="footer-left">
+          <h6> <a href="index.html"> ACASĂ</a></h6>
+          <h6> <a href="about.html"> DESPRE</a></h6>
+          <h6> <a href="document/CV Rareș-Gabriel Mușea.pdf"> CV</a></h6>
+          <h6> <a href="portofoliu.html">PORTOFOLIU PERSONAL</a></h6>
+          <h6> <a href="contact.html"> CONTACT</a></h6>
+        </div>
+
+        <div id="button">
+          <button id="newsletter">Apasă pentru a te abona la newsletter</button>
+        </div>
+
+        <div class="left-col2">
+          <h6>©Rareș-Gabriel Mușea, 2021. Toate drepturile sunt rezervate.</h6>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/Links.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+
+</html>
